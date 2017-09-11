@@ -23,7 +23,7 @@ const Header = () =>
     <li><Link style={{textDecoration:'none', boxShadow: "none"}} to='/blog/'>BLOG</Link></li>
     <li><a href="https://www.facebook.com/Cointelligent-121465488504619/"><i className='fa fa-facebook-square'></i></a></li>
     <li><a href="https://www.instagram.com/cointelligent/"><i className='fa fa-instagram'></i></a></li>
-    <li><a href="https://twitter.com/cointelligentme"><i className='fa fa-twitter'></i></a></li>
+    <li><a href="https://twitter.com/cointelligentco"><i className='fa fa-twitter'></i></a></li>
   </ul>
 </div>
 
