@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
   background-color: #fff;
+  min-width: 470px;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -661,23 +662,17 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   content: "";
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
-
 /* Waves */
 
 .waves {
+  opacity: 0.5;
   width: 100%;
   height: 25vh;
   min-height: 10em;
+  position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
-  position: absolute;
+  z-index: -100;
   overflow: hidden;
   -ms-transform: rotate(180deg);
   /* IE 9 */
@@ -807,9 +802,13 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 #mc_embed_signup form {
-  text-align: center;
+  text-align: left;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+#mc_embed_signup_scroll {
+  text-align: left;
 }
 
 #mc_embed_signup input.email {
@@ -819,7 +818,7 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   height: 40px !important;
   line-height: 40px;
   margin-right: 20px !important;
-  padding: 0 30px;
+  padding: 0;
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   border-radius: 4px;
   font-size: 15px;
@@ -843,4 +842,119 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   text-decoration: none;
   transition: all .15s ease;
   background-color: rgb(31, 199, 142);
+}
+
+.intro {
+  text-align: left;
+  margin-top: 50px;
+  float: left;
+  width: 60%;
+}
+
+#introP1 {
+  font-family: Roboto;
+  font-size: 1.875em;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+#introP1 h1 {
+  font-family: Montserrat;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  display: inline;
+  letter-spacing: 0;
+}
+
+#introP2 {
+  font-family: Lato;
+  font-size: 1em;
+  line-height: 1em;
+  max-width: 75%;
+}
+
+.appIntro {
+  float: right;
+  width: 40%;
+  height: 500px;
+  position: relative;
+}
+
+#appImg {
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  left: 22.5%;
+  z-index: 10;
+}
+
+.colorBar {
+  width: 5px;
+  height: 100px;
+  background-color: #000;
+  position: absolute;
+  margin: 0;
+}
+
+.bar_1 {
+  background-color: #08cc08;
+  left: 15%;
+  top: 20px;
+}
+
+.bar_2 {
+  background-color: #f1ef17;
+  left: 70%;
+  top: -20px;
+}
+
+.bar_3 {
+  background-color: #ee3514;
+  left: -5%;
+  top: 220px;
+}
+
+.bar_4 {
+  background-color: #8114ee;
+  left: 90%;
+  top: 140px;
+}
+
+.bar_5 {
+  background-color: #1486ee;
+  left: 30%;
+  top: 330px;
+}
+
+.bar_6 {
+  background-color: #ee7614;
+  left: 80%;
+  top: 410px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media only screen and (max-width: 610px) {
+  .intro, .appIntro {
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .appIntro {
+    text-align: center;
+    width: 70%;
+    margin-top: 130px;
+  }
+
+  .intro, #mc_embed_signup_scroll, #introP1, #introP2 {
+    text-align: center;
+    margin: 0.8em auto;
+  }
 }

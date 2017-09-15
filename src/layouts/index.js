@@ -39,6 +39,12 @@ const TemplateWrapper = ({children}) =>
     }
   ]} link={[
     {
+      href: "//fonts.googleapis.com/css?family=Roboto",
+      rel: "stylesheet"
+    }, {
+      href: "//fonts.googleapis.com/css?family=Lato:light",
+      rel: "stylesheet"
+    }, {
       href: "//fonts.googleapis.com/css?family=Montserrat:bold",
       rel: "stylesheet"
     }, {
