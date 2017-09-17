@@ -65,6 +65,13 @@ const TemplateWrapper = ({children}) =>
   }}>
     {children()}
   </div>
+  <div className="waves">
+    <div className="wave wave_1"></div>
+    <div className="wave wave_2"></div>
+    <div className="wave wave_3"></div>
+    <div className="wave wave_4"></div>
+    <div className="wave wave_5"></div>
+  </div>
 </div>
 
 TemplateWrapper.propTypes = {

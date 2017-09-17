@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   background-color: #fff;
-  min-width: 470px;
+  min-width: 320px;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -667,10 +667,10 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 .waves {
   opacity: 0.5;
   width: 100%;
-  height: 25vh;
+  height: 30vh;
   min-height: 10em;
+  bottom: -40px;
   position: absolute;
-  bottom: 0;
   left: 0;
   z-index: -100;
   overflow: hidden;
@@ -803,8 +803,13 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 
 #mc_embed_signup form {
   text-align: left;
-  max-width: 800px;
+  width: 300px;
   margin: 0;
+}
+
+#mc_embed_signup .clear{
+  display: inline-block !important;
+  width: 60px !important;
 }
 
 #mc_embed_signup_scroll {
@@ -817,7 +822,6 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   width: 200px !important;
   height: 40px !important;
   line-height: 40px;
-  margin-right: 20px !important;
   padding: 0;
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   border-radius: 4px;
@@ -831,7 +835,10 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 #mc_embed_signup input.button {
-  height: 40px;
+  width: 60px !important;
+  padding: 0 10px;
+  margin-left: 20px;
+  height: 40px !important;
   line-height: 40px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
   border-radius: 4px;
@@ -844,9 +851,13 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   background-color: rgb(31, 199, 142);
 }
 
+#main {
+  position: relative;
+}
+
 .intro {
   text-align: left;
-  margin-top: 50px;
+  margin-top: 80px;
   float: left;
   width: 60%;
 }
@@ -861,8 +872,7 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 
 #introP1 h1 {
   font-family: Montserrat;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1em;
   display: inline;
   letter-spacing: 0;
 }
@@ -870,8 +880,8 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 #introP2 {
   font-family: Lato;
   font-size: 1em;
-  line-height: 1em;
-  max-width: 75%;
+  line-height: 1.5em;
+  width: 75%;
 }
 
 .appIntro {
@@ -882,14 +892,29 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 #appImg {
-  display: block;
-  width: 55%;
-  margin: 0 auto;
-  border-radius: 10px;
+  margin-top: 50px;
+  width: 200px;
+  background-color: #1a1a1a;
   position: absolute;
-  top: 40px;
   left: 22.5%;
   z-index: 10;
+  border-radius: 25px;
+}
+
+#appImg img {
+  display: block;
+  width: 175px;
+  margin: 2.5em auto;
+  margin-bottom: 0;
+}
+
+.circle {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.4em auto;
+  background-color: #1a1a1a;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .colorBar {
@@ -898,6 +923,7 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   background-color: #000;
   position: absolute;
   margin: 0;
+  z-index: -1;
 }
 
 .bar_1 {
@@ -927,34 +953,81 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 .bar_5 {
   background-color: #1486ee;
   left: 30%;
-  top: 330px;
+  top: 400px;
 }
 
 .bar_6 {
   background-color: #ee7614;
   left: 80%;
-  top: 410px;
+  top: 450px;
 }
 
-.clear {
+.clearFloat {
   clear: both;
 }
 
 @media only screen and (max-width: 610px) {
   .intro, .appIntro {
     float: none;
-    margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
 
   .appIntro {
-    text-align: center;
-    width: 70%;
-    margin-top: 130px;
+    margin: 0 auto;
+    width: 60%;
   }
 
   .intro, #mc_embed_signup_scroll, #introP1, #introP2 {
-    text-align: center;
     margin: 0.8em auto;
+    margin-left: 0;
+  }
+
+  #introP2 {
+    width: 100%;
+  }
+
+  #appImg {
+    position: static;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 0.1em;
+    left: 0;
+  }
+
+  .bar_1 {
+    left: 5%;
+    top: 40px;
+  }
+
+  .bar_2 {
+    top: -40px;
+  }
+
+  .bar_3 {
+    left: -5%;
+  }
+
+  .bar_4 {
+    left: 100%;
+  }
+
+  .bar_5 {
+    top: 350px;
+  }
+
+  .bar_6 {
+    left: 90%;
+    top: 380px;
+  }
+
+  .waves {
+    position: relative;
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .appIntro {
+    margin-left: 15%;
   }
 }
