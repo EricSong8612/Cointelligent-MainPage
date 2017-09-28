@@ -39,13 +39,19 @@ const TemplateWrapper = ({children}) =>
     }
   ]} link={[
     {
-      href: "//fonts.googleapis.com/css?family=Roboto",
+      href: "//fonts.googleapis.com/css?family=Roboto:100,300,400",
       rel: "stylesheet"
     }, {
       href: "//fonts.googleapis.com/css?family=Lato:light",
       rel: "stylesheet"
     }, {
       href: "//fonts.googleapis.com/css?family=Montserrat:bold",
+      rel: "stylesheet"
+    }, {
+      href: "//fonts.googleapis.com/css?family=Josefin Sans:400,700",
+      rel: "stylesheet"
+    }, {
+      href: "//fonts.googleapis.com/css?family=Source Sans Pro",
       rel: "stylesheet"
     }, {
       href: "//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css",
@@ -57,20 +63,8 @@ const TemplateWrapper = ({children}) =>
     }
   ]}/>
   <Header/>
-  <div style={{
-    margin: '0 auto',
-    maxWidth: 960,
-    padding: '0px 1.0875rem 1.45rem',
-    paddingTop: '1em'
-  }}>
+  <div>
     {children()}
-  </div>
-  <div className="waves">
-    <div className="wave wave_1"></div>
-    <div className="wave wave_2"></div>
-    <div className="wave wave_3"></div>
-    <div className="wave wave_4"></div>
-    <div className="wave wave_5"></div>
   </div>
 </div>
 
