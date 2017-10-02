@@ -18,13 +18,17 @@ const Header = () =>
   }}>
    <Link style={{color:'rgb(31,199,142)'}} to='/'>C</Link>
   </div>
-  <ul style={{float:'right', listStyle:'none', padding:'0', margin:'0', fontSize: '0.8em'}}>
-    <li><a href="http://markets.cointelligent.io">MARKET</a></li>
-    <li><Link style={{textDecoration:'none', boxShadow: "none"}} to='/blog/'>BLOG</Link></li>
-    <li><a href="https://www.facebook.com/Cointelligent-121465488504619/"><i className='fa fa-facebook-square'></i></a></li>
-    <li><a href="https://www.instagram.com/cointelligent/"><i className='fa fa-instagram'></i></a></li>
-    <li><a href="https://twitter.com/cointelligentco"><i className='fa fa-twitter'></i></a></li>
-  </ul>
+  <div className='nav'>
+    <i id='navicon' className="fa fa-bars" aria-hidden="true"></i>
+    <ul id='navls' style={{listStyle:'none', padding:'0', margin:'0', fontSize: '0.8em', textAlign:'right'}}>
+      <li><a href="http://markets.cointelligent.io">MARKET</a></li>
+      <li><Link style={{textDecoration:'none', boxShadow: "none"}} to='/blog/'>BLOG</Link></li>
+      <li><a href="https://www.facebook.com/Cointelligent-121465488504619/"><i className='fa fa-facebook-square'></i></a></li>
+      <li><a href="https://www.instagram.com/cointelligent/"><i className='fa fa-instagram'></i></a></li>
+      <li><a href="https://twitter.com/cointelligentco"><i className='fa fa-twitter'></i></a></li>
+    </ul>
+  </div>
+  <div className='clearFloat'></div>
 </div>
 
 const TemplateWrapper = ({children}) =>

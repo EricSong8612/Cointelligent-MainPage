@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   background-color: #fff;
-  min-width: 320px;
+  min-width: 300px;
   overflow: hidden;
 }
 
@@ -663,6 +663,27 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   content: "";
 }
 
+.nav {
+  float: right;
+  position: relative;
+  height: 39px;
+  text-align: right
+}
+
+#navicon, #navls {
+  float: right;
+}
+
+#navicon {
+  display: none;
+}
+
+#navls {
+  display: inline-block;
+  height: inherit;
+  overflow: hidden;
+}
+
 .content {
   margin: auto;
   max-width: 960px;
@@ -670,76 +691,23 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   padding-top: 1em;
 }
 
-.mc_embed_signup {
-  font: 14px Helvetica, Arial, sans-serif;
-}
-
-.mc_embed_signup:first-child form {
-  text-align: left;
-  width: 300px;
-  margin: 0;
-}
-
-.mc_embed_signup .clear{
-  display: inline-block !important;
-  width: 60px !important;
-}
-
-.mc_embed_signup_scroll {
-  text-align: left;
-}
-
-.mc_embed_signup input.email {
-  white-space: nowrap;
-  display: inline-block;
-  width: 200px !important;
-  height: 40px !important;
-  line-height: 40px;
-  padding: 0;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-  border-radius: 4px;
-  border: 1px solid #aaa;
-  font-size: 15px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .025em;
-  text-decoration: none;
-  transition: all .15s ease;
-}
-
-.mc_embed_signup input.button {
-  width: 60px !important;
-  padding: 0 10px;
-  margin-left: 20px;
-  height: 40px !important;
-  line-height: 40px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-  border-radius: 4px;
-  border: 1px solid #aaa;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: .025em;
-  color: #fff;
-  text-decoration: none;
-  transition: all .15s ease;
-  background-color: rgb(31, 199, 142);
-}
-
 #main {
   position: relative;
-}
-
-.mainIntro {
-  height: 650px;
 }
 
 .bgImg {
   position: absolute;
   z-index: -1000;
-  width: 100%;
+  width: 110%;
+  height: 680px;
   min-width: 950px;
-  top: 230px;
+  top: 0;
+}
+
+.bgImg img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .intro {
@@ -769,6 +737,62 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   font-size: 1em;
   line-height: 1.5em;
   width: 75%;
+}
+
+.mc_embed_signup {
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 280px;
+}
+
+.mc_embed_signup:first-child form {
+  text-align: left;
+  width: 300px;
+  margin: 0;
+}
+
+.mc_embed_signup .clear{
+  display: inline-block !important;
+  width: 60px !important;
+}
+
+.mc_embed_signup_scroll, .mc-embedded-subscribe-form {
+  text-align: left;
+  width: inherit;
+}
+
+.mc_embed_signup input.email {
+  white-space: nowrap;
+  display: inline-block;
+  width: 200px !important;
+  height: 40px !important;
+  line-height: 40px;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: .025em;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+.mc_embed_signup input.button {
+  width: 60px !important;
+  padding: 0 10px;
+  margin-left: 20px;
+  height: 40px !important;
+  line-height: 40px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  letter-spacing: .025em;
+  color: #fff;
+  text-decoration: none;
+  transition: all .15s ease;
+  background-color: rgb(31, 199, 142);
 }
 
 .appIntro {
@@ -853,73 +877,8 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   clear: both;
 }
 
-@media only screen and (max-width: 610px) {
-  .intro, .appIntro {
-    float: none;
-    width: 90%;
-  }
-
-  .appIntro {
-    margin: 0 auto;
-    width: 60%;
-  }
-
-  .intro, .mc_embed_signup_scroll, #introP1, #introP2 {
-    margin: 0.8em auto;
-    margin-left: 0;
-  }
-
-  #introP2 {
-    width: 100%;
-  }
-
-  #appImg {
-    position: static;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding-top: 0.1em;
-    left: 0;
-  }
-
-  .bar_1 {
-    left: 5%;
-    top: 40px;
-  }
-
-  .bar_2 {
-    top: -40px;
-  }
-
-  .bar_3 {
-    left: -5%;
-  }
-
-  .bar_4 {
-    left: 100%;
-  }
-
-  .bar_5 {
-    top: 350px;
-  }
-
-  .bar_6 {
-    left: 90%;
-    top: 380px;
-  }
-
-  .waves {
-    position: relative;
-    margin-top: -200px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .appIntro {
-    margin-left: 15%;
-  }
-}
-
 .diagramIntro {
+  margin-top: 150px;
   text-align: center;
   position: relative;
   z-index: 100;
@@ -949,23 +908,36 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   margin-bottom: 0;
   width: 600px;
   height: 300px;
-  position: relative;
 }
 
-.diagram .diagramImg, .diagram .diagramText, .diagram .phone {
+.animDiagram, .staticDiagram {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+}
+
+.diagram .animDiagram {
+  width: 420px;
+}
+
+.diagram .staticDiagram {
+  width: 180px;
+}
+
+.diagram .diagramImg, .diagram .diagramText, .staticDiagram .phone {
   position: absolute;
   visibility: hidden;
   overflow: hidden;
 }
 
-.diagram .diagramText, .diagram .phone, #gdax {
+.diagram .diagramText, .staticDiagram .phone, #gdax {
   text-align: left;
   border: 1px solid #eee;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 
-.diagram .phone {
+.staticDiagram .phone {
   text-align: center;
   border-radius: 25px;
   width: 130px;
@@ -975,7 +947,7 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   visibility: visible;
 }
 
-.diagram .phone p {
+.staticDiagram .phone p {
   border: 1px solid #eee;
   width: 114px;
   height: 190px;
@@ -987,23 +959,23 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   padding-top: 30px;
 }
 
-.diagram .phone i {
+.staticDiagram .phone i {
   color: #eee;
   font-size: 1.7em;
 }
 
 #arrow {
   width: 75px;
-  right: 130px;
+  left: -25px;
   top: 110px;
   animation: entry 0.3s linear 4s 1 forwards;
 }
 
 #ethText {
-  right: 210px;
-  top: 90px;
   width: 100px;
   padding: 0.1em 0;
+  left: 290px;
+  top: 90px;
 }
 
 #ethText div {
@@ -1021,10 +993,10 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 #longText {
-  right: 320px;
-  top: 60px;
   width: 240px;
   padding: 0.5em;
+  left: 40px;
+  top: 60px;
 }
 
 #longText p:first-child {
@@ -1039,45 +1011,45 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 #gdax {
-  right: 280px;
-  top: 170px;
   width: 160px;
   padding: 0.5em 1em;
+  left: 160px;
+  top: 170px;
 }
 
 #ltc {
   width: 40px;
   top: 180px;
-  right: 480px;
+  left: 80px;
 }
 
 #eth {
   width: 30px;
   top: 180px;
-  right: 230px;
+  left: 340px;
 }
 
 #navc {
   width: 40px;
   top: 260px;
-  right: 330px;
+  left: 230px;
 }
 
 #btc {
   width: 50px;
-  right: 190px;
+  left: 360px;
 }
 
 #iota {
   width: 30px;
   top: 20px;
-  right: 280px;
+  left: 290px;
 }
 
 #monero {
   width: 30px;
   top: 10px;
-  right: 440px;
+  left: 130px;
 }
 
 #neo {
@@ -1086,23 +1058,23 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   left: 0;
 }
 
-#ethText, #longText {
+#btc, #longText {
   animation: entry 0.3s linear 0s 1 forwards;
 }
 
-#gdax, #ltc {
+#gdax, #monero {
   animation: entry 0.3s linear 0.8s 1 forwards;
 }
 
-#neo, #monero {
+#ltc, #ethText {
   animation: entry 0.3s linear 1.6s 1 forwards;
 }
 
-#iota, #btc {
+#neo, #eth {
   animation: entry 0.3s linear 2.4s 1 forwards;
 }
 
-#eth, #navc {
+#iota, #navc {
   animation: entry 0.3s linear 3.2s 1 forwards;
 }
 
@@ -1113,14 +1085,14 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 
 .coinIQ {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 60px;
 }
 
 .bg {
   background-color: rgb(245,249,252);
   position: absolute;
-  height: 550px;
+  height: 650px;
   width: 150%;
   left: -25%;
   z-index: -100;
@@ -1168,7 +1140,7 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   background-color: #fff;
   width: 100%;
   border-bottom: 1px solid #aaa;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 0.8em 1em;
   font-size: 0.8em;
@@ -1223,7 +1195,8 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 .joinUs {
-  padding: 150px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   text-align: center;
 }
 
@@ -1243,14 +1216,14 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
   font-family: 'Josefin Sans';
 }
 
-.mc_embed_signup:nth-child(2) form {
+.joinUs > .mc_embed_signup {
   margin: auto;
 }
 
 .copyRight h1 {
   font-size: 1.2em;
   font-family: 'Montserrat';
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .copyRight .footNav, .copyRight p {
@@ -1261,9 +1234,307 @@ pre code:before, pre code:after, pre tt:before, pre tt:after {
 }
 
 .copyRight .footNav {
-  text-align: right;
+  float: right;
+  position: relative;
+  top: -70px;
 }
 
 .copyRight .footNav ul, .copyRight .footNav ul li {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 620px) {
+  #navicon {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 0.2em;
+  }
+
+  #navls {
+    width: 0;
+  }
+
+  .nav:hover #navls {
+    display: inline-block;
+    width: 195px;
+    transition: width 1s;
+  }
+
+  li {
+    margin-left: 10px;
+  }
+
+  .bgImg {
+    top: 300px;
+  }
+
+  .intro, .appIntro {
+    float: none;
+    width: 90%;
+  }
+
+  .appIntro {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .intro, .mc_embed_signup_scroll, #introP1, #introP2 {
+    margin: 0.8em auto;
+    margin-left: 0;
+  }
+
+  #introP2 {
+    width: 100%;
+  }
+
+  #appImg {
+    position: static;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 0.1em;
+    left: 0;
+  }
+
+  .bar_1 {
+    left: 5%;
+    top: 40px;
+  }
+
+  .bar_2 {
+    top: -40px;
+  }
+
+  .bar_3 {
+    left: -5%;
+  }
+
+  .bar_4 {
+    left: 100%;
+  }
+
+  .bar_5 {
+    top: 350px;
+  }
+
+  .bar_6 {
+    left: 90%;
+    top: 380px;
+  }
+
+  .diagramIntro {
+    margin-top: 40px;
+  }
+
+  .diagramIntro > p {
+    display: inline;
+  }
+
+  .diagramIntro .diagram {
+    width: 420px;
+    height: 600px;
+  }
+
+  .diagram .staticDiagram {
+    width: 100%;
+  }
+
+  #arrow, .staticDiagram .phone {
+    display: block;
+    position: static;
+    margin: auto;
+  }
+
+  #arrow {
+    margin-bottom: 20px;
+    animation: entry1 0.1s linear 4.3s 1 forwards;
+  }
+
+  @keyframes entry1 {
+      0% {transform: scale(0) rotate(0deg); visibility: hidden;}
+    100% {transform: scale(1) rotate(90deg); visibility: visible;}
+  }
+
+  .coinIQ {
+    padding-top: 150px;
+  }
+
+  .bg {
+    height: 700px;
+  }
+
+  .coinIQ h2 {
+    display: none;
+  }
+
+  .coinIQ .left, .coinIQ .right {
+    float: none;
+    width: 100%;
+  }
+
+  .coinIQ .right {
+    text-align: center;
+  }
+
+  .coinIQ .right h3 {
+    font-weight: bold;
+  }
+
+  .coinIQ .left .news ul li {
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
+  }
+
+  .joinUs {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .joinUs h2 {
+    display: inline;
+  }
+
+  .joinUs > .mc_embed_signup {
+    margin-top: 30px;
+  }
+
+  .copyRight .footNav {
+    float: none;
+    text-align: left;
+    top: 0;
+    margin-top: 50px;
+  }
+
+  .copyRight .footNav ul, .copyRight .footNav ul li {
+    margin: 0;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .diagramIntro, .diagramIntro h2 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .bg {
+    height: 750px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .diagramIntro .diagram {
+    width: 260px;
+    height: 600px;
+    margin-top: 20px;
+  }
+
+  .diagram .animDiagram {
+    width: 260px;
+  }
+
+  #arrow {
+    width: 50px;
+  }
+
+  #ethText {
+    width: 65px;
+    padding: 0.062em 0;
+    left: 200px;
+    top: 90px;
+  }
+
+  #ethText div {
+    font-size: 0.5em;
+  }
+
+  #longText {
+    width: 150px;
+    padding: 0.3em;
+    left: 40px;
+    top: 60px;
+  }
+
+  #gdax {
+    width: 100px;
+    left: 110px;
+    top: 200px;
+  }
+
+  #ltc {
+    width: 25px;
+    left: 70px;
+    top: 210px;
+  }
+
+  #eth {
+    width: 25px;
+    top: 200px;
+    left: 220px;
+  }
+
+  #navc {
+    left: 110px;
+  }
+
+  #btc {
+    width: 40px;
+    left: 230px;
+    top: 10px;
+  }
+
+  #iota {
+    width: 25px;
+    left: 180px;
+    top: 25px;
+  }
+
+  #monero {
+    width: 30px;
+    left: 100px;
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .appIntro {
+    margin-left: 15%;
+  }
+
+  .joinUs {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .bgImg {
+    top: 350px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .bg {
+    height: 830px;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .bgImg {
+    top: 380px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .bg {
+    height: 880px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .bgImg {
+    top: 420px;
+  }
 }
